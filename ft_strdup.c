@@ -6,9 +6,11 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 13:53:17 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/24 13:57:22 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/03/24 14:08:35 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strdup(const char *str)
 {

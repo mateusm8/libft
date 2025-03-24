@@ -6,9 +6,11 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 19:53:34 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/23 19:59:33 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/03/24 14:08:02 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	bzero(void *ptr, size_t num)
 {
