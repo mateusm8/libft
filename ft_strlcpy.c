@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 18:35:28 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/23 18:46:37 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/03 22:59:18 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ size_t	ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize
 		}
 		dst[i] = '\0';
 	}
-	return (ft_strlen(src));
+	return ((size_t) ft_strlen((char *) src));
 }

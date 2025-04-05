@@ -1,40 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/23 19:18:02 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/03 23:17:14 by matmagal         ###   ########.fr       */
+/*   Created: 2025/03/25 13:30:16 by matmagal          #+#    #+#             */
+/*   Updated: 2025/04/03 23:20:08 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	i;
-	size_t	j;
+	char	*str;
 
 	i = 0;
-	if (len < (size_t) ft_strlen((char *) needle) || !haystack || !needle)
+	if (!s)
 		return (NULL);
-	if (needle[0] == '\0')
-		return ((char *)haystack);	
-	while (haystack[i] && i < len)
+	if ((int) start > ft_strlen((char *) s))
 	{
-		j = 0;
-		if (haystack[i] == needle[j])
-		{
-			while (i + j < len && needle[j] && haystack[i + j] == needle[j])
-			{
-				j++;
-				if (needle[j] == '\0')
-					return ((char *)&haystack[i]);
-			}
-		}
-		i++;
+		str = (char *) malloc(sizeof(char));
+		if (!str)
+			return (NULL);
+		str[0] = '\0';
+		return (str);
 	}
-	return (NULL);
+	str = (char *) malloc((len + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	while (i < len && s[start])
+	{
+		str[i] = s[start];
+		i++;
+		start++;
+	}
+	str[i] = '\0';
+	return (str);
 }

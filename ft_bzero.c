@@ -6,13 +6,13 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 19:53:34 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/24 14:08:02 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/03 22:43:03 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *ptr, size_t num)
+void	ft_bzero(void *ptr, size_t num)
 {
 	size_t	i;
 
