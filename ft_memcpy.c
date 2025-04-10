@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 20:04:20 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/24 14:08:18 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/10 21:23:12 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t num)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (num == 0)

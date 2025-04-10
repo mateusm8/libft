@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 13:53:17 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/03 22:56:19 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/10 21:24:10 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *str)
 {
-	int	i;
+	int		i;
 	char	*ptr;
 
 	i = 0;

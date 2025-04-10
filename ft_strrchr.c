@@ -6,13 +6,13 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 22:21:57 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/03 23:18:54 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/10 21:25:59 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *strrchr(const char *s, int c)
+char	*strrchr(const char *s, int c)
 {
 	int	i;
 

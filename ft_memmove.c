@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 11:14:44 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/24 14:08:24 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/10 21:23:21 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 	size_t			i;
 	unsigned char	*d;
 	unsigned char	*s;
-	
+
 	i = 0;
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
