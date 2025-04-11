@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 14:01:21 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/10 21:27:13 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/11 18:28:21 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif

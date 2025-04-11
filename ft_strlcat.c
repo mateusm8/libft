@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 18:48:16 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/10 21:24:55 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/11 18:47:21 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size)
 	size_t	lensrc;
 
 	i = 0;
-	lendst = ft_strlen((char *) dst);
-	lensrc = ft_strlen((char *) src);
+	lendst = ft_strlen(dst);
+	lensrc = ft_strlen(src);
 	if (size <= lendst)
 		return (size + lensrc);
 	while (src[i] && (lendst + i < size - 1))

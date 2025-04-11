@@ -6,7 +6,7 @@
 #    By: matmagal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/24 14:14:20 by matmagal          #+#    #+#              #
-#    Updated: 2025/04/03 23:16:01 by matmagal         ###   ########.fr        #
+#    Updated: 2025/04/11 18:27:46 by matmagal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,8 @@ SRCS = 	ft_atoi.c \
 		ft_strrchr.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c 
+		ft_toupper.c \
+		ft_strtrim.c
 
 OBJS = $(SRCS:.c=.o)
 AR = ar rcs
