@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 21:37:30 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/11 19:42:09 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/14 12:18:53 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, i, j - i);
 	if (!str)
 		return (NULL);
-	return(str);
+	return (str);
 }

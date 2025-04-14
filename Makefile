@@ -6,7 +6,7 @@
 #    By: matmagal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/24 14:14:20 by matmagal          #+#    #+#              #
-#    Updated: 2025/04/11 18:27:46 by matmagal         ###   ########.fr        #
+#    Updated: 2025/04/14 19:53:50 by matmagal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ SRCS = 	ft_atoi.c \
 		ft_memchr.c \
 		ft_memcpy.c \
 		ft_memmove.c \
+		ft_memcmp.c \
 		ft_memset.c \
 		ft_strlen.c \
 		ft_strchr.c \
@@ -38,7 +39,10 @@ SRCS = 	ft_atoi.c \
 		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c \
-		ft_strtrim.c
+		ft_strtrim.c \
+		ft_split.c \
+		ft_itoa.c \
+		ft_strmapi.c
 
 OBJS = $(SRCS:.c=.o)
 AR = ar rcs

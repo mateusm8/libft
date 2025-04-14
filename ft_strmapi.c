@@ -1,20 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/22 21:52:13 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 15:57:45 by matmagal         ###   ########.fr       */
+/*   Created: 2025/04/14 19:44:50 by matmagal          #+#    #+#             */
+/*   Updated: 2025/04/14 19:54:19 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= 65 && c <= 90)
-		return (c + 32);
-	return (c);
+	char	*str;
+	size_t		i;
+
+	i = 0;
+	if (!s)
+		return (NULL);
+	str = (char *) malloc(ft_strlen(s) + 1 * sizeof(char));
+	if (!str)
+		return (NULL);
+	while (i < ft_strlen(s))
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
