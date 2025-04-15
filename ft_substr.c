@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 13:30:16 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 18:24:54 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/15 22:14:18 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	size_t	i;
 	char	*str;
 
-	i = 0;
 	if (!s)
 		return (NULL);
 	if (start >= ft_strlen(s))
