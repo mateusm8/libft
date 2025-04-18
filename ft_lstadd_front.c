@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/14 19:44:50 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/18 19:48:08 by matmagal         ###   ########.fr       */
+/*   Created: 2025/04/18 20:21:22 by matmagal          #+#    #+#             */
+/*   Updated: 2025/04/18 20:31:42 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_lastadd_front(t_list **lst, t_list *new)
 {
-	char		*str;
-	size_t		i;
-
-	i = 0;
-	if (!s)
+	if (!lst || !new)
 		return (NULL);
-	str = (char *) malloc(ft_strlen(s) + 1 * sizeof(char));
-	if (!str)
-		return (NULL);
-	while (i < ft_strlen(s))
-	{
-		str[i] = f(i, s[i]);
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
+	new->next = *lst;
+	*lst = new;
 }

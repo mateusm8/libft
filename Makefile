@@ -6,7 +6,7 @@
 #    By: matmagal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/24 14:14:20 by matmagal          #+#    #+#              #
-#    Updated: 2025/04/15 22:41:29 by matmagal         ###   ########.fr        #
+#    Updated: 2025/04/18 20:16:17 by matmagal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,9 +49,12 @@ SRCS = 	ft_atoi.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c
 
+BONUS_SRC = 
+
 OBJS = $(SRCS:.c=.o)
 AR = ar rcs
 RM = rm -f
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 all: $(NAME)
 
@@ -68,5 +71,8 @@ fclean: clean
 		$(RM) $(NAME)
 
 re: fclean all
+
+bonus: $(BONUS_OBJ) $(OBJS)
+	$(AR) $(NAME) $(BONUS_OBJ) $(OBJS)
 
 .PHONY: all clean fclean re

@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 14:01:21 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/15 22:41:19 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/18 19:50:16 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 int		ft_atoi(const char *str);
 void	ft_bzero(void *ptr, size_t num);
 void	*ft_calloc(size_t num, size_t size);

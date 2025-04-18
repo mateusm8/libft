@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 22:36:02 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/15 22:43:32 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/18 19:48:36 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long nb;
-	
+	long	nb;
+
 	nb = n;
 	if (nb < 0)
 	{
