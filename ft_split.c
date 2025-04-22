@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 18:34:41 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/22 01:18:46 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 11:13:16 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,23 +67,17 @@ static void	ft_free(char **str)
 	free(str);
 }
 
-char	**ft_split(const char *s, char c)
+static char **split_fill(const char *s, char **str, char c)
 {
-	char	**str;
-	int		i;
-	int		j;
-	int		k;
+	int	i;
+	int	j;
+	int	k;
 
-	if (!s)
-		return (NULL);
-	str = (char **) malloc((count_str(s, c) + 1) * sizeof(char *));
-	if (str == NULL)
-		return (NULL);
 	i = 0;
 	k = 0;
 	while (s[i])
 	{
-		while (s[i] == c)
+		while (s[i] && s[i] == c)
 			i++;
 		j = i;
 		while (s[i] && s[i] != c)
@@ -103,7 +97,19 @@ char	**ft_split(const char *s, char c)
 	return (str);
 }
 
-/*int	main(void)
+char	**ft_split(const char *s, char c)
+{
+	char	**str;
+
+	if (!s)
+		return (NULL);
+	str = (char **) malloc((count_str(s, c) + 1) * sizeof(char *));
+	if (str == NULL)
+		return (NULL);
+	return (split_fill(s, str, c));
+}
+
+int	main(void)
 {
 	char	str[] = "eu,,vou,fazer,essa,porra";
 	char 		**strs = ft_split(str, ',');
@@ -116,4 +122,3 @@ char	**ft_split(const char *s, char c)
 		i++;
 	}
 }
-*/
