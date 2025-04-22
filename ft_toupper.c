@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 21:36:05 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 15:57:37 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 16:21:33 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,17 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+/*int	main(void)
+{
+	char	str[] = "Vamos testar uma cena!";
+	int		i;
+
+	i = 0;
+	while (str[i])
+	{
+		str[i] = ft_toupper(str[i]);
+		i++;
+	}
+	printf("%s\n", str);
+}*/

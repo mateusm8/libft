@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 13:36:11 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 17:51:11 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 20:49:51 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 		i++;
 	return (s1[i] - s2[i]);
 }
+
+/*int	main(void)
+{
+	char	str1[] = "Hello world!";
+	char	str2[] = "Hello World!";
+
+	printf("%d\n", ft_memcmp(str1, str2, 10));
+}*/

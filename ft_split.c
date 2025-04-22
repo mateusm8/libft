@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 18:34:41 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/22 11:13:16 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 21:03:27 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,33 +67,31 @@ static void	ft_free(char **str)
 	free(str);
 }
 
-static char **split_fill(const char *s, char **str, char c)
+static char	**split_fill(const char *s, char **str, char c)
 {
-	int	i;
-	int	j;
-	int	k;
+	int	index[3];
 
-	i = 0;
-	k = 0;
-	while (s[i])
+	index[0] = 0;
+	index[2] = 0;
+	while (s[index[0]])
 	{
-		while (s[i] && s[i] == c)
-			i++;
-		j = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > j)
+		while (s[index[0]] && s[index[0]] == c)
+			index[0]++;
+		index[1] = index[0];
+		while (s[index[0]] && s[index[0]] != c)
+			index[0]++;
+		if (index[0] > index[1])
 		{
-			str[k] = ft_strndup(&s[j], i - j);
-			if (str[k] == NULL)
+			str[index[2]] = ft_strndup(&s[index[1]], index[0] - index[1]);
+			if (str[index[2]] == NULL)
 			{
 				ft_free(str);
 				return (NULL);
 			}
-			k++;
+			index[2]++;
 		}
 	}
-	str[k] = NULL;
+	str[index[2]] = NULL;
 	return (str);
 }
 
@@ -109,7 +107,7 @@ char	**ft_split(const char *s, char c)
 	return (split_fill(s, str, c));
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "eu,,vou,fazer,essa,porra";
 	char 		**strs = ft_split(str, ',');
@@ -121,4 +119,5 @@ int	main(void)
 		printf("%s\n", strs[i]);
 		i++;
 	}
-}
+	ft_free(strs);
+}*/

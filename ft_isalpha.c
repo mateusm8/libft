@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 21:14:19 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/03 22:46:32 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 15:30:02 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,19 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+	int		i;
+	char	str[] = "teste string1";
+
+	i = 0;
+	while (str[i])
+	{
+		if (ft_isalpha(str[i]))
+			printf("O caracter %d no indice %i e alpha \n", str[i], i);
+		if (!ft_isalpha(str[i]))
+			printf("O caracter %d no indice %i nao e alpha \n", str[i], i);
+		i++;
+	}
+}*/

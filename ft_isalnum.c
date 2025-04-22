@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 21:24:12 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/22 23:34:44 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 15:39:37 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,19 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+	int		i;
+	char	str[] = "teste string1";
+
+	i = 0;
+	while (str[i])
+	{
+		if (ft_isalnum(str[i]))
+			printf("O caracter %d no indice %i e alnum \n", str[i], i);
+		if (!ft_isalnum(str[i]))
+			printf("O caracter %d no indice %i nao e alnum \n", str[i], i);
+		i++;
+	}
+}*/

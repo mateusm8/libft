@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 20:53:25 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/18 21:08:00 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 15:02:59 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
-	
+
 	if (!lst || !new)
 		return ;
 	if (!*lst)

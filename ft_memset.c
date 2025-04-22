@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 19:40:28 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/10 21:23:28 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 17:20:58 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
+
+/*int	main(void)
+{
+	char	str[] = "Hello World";
+	int		i = 97;
+
+	ft_memset(str, i, 5);
+	printf("%s\n", str);
+}*/

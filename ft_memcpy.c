@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 20:04:20 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/10 21:23:12 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 17:36:56 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t num)
 	}
 	return (dest);
 }
+
+/*int	main(void)
+{
+	char	src[] = "Hello World!";
+	char	dst[50];
+
+	ft_memcpy(dst, src, 5);
+	printf("%s\n", dst);
+}*/

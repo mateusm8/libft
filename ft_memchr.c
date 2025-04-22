@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 12:45:43 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 15:42:43 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 20:39:26 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,11 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 	}
 	return (NULL);
 }
+
+/*int	main(void)
+{
+	char	str[] = "Letra A do teste";
+	int		i = 96;
+
+	printf("%p\n", ft_memchr(str, i, 10));
+}*/

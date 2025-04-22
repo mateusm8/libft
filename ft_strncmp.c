@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 23:30:20 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 16:06:45 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 20:23:41 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int	main(void)
+{
+	char	str1[] = "Hello World";
+	char	str2[] = "Hello World";
+	
+	printf("%d\n", ft_strncmp(str1, str2, 10));
+}*/

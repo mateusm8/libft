@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 19:53:34 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/03 22:43:03 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 17:27:10 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ void	ft_bzero(void *ptr, size_t num)
 		i++;
 	}
 }
+
+/*int	main(void)
+{
+	char	str[] = "Hello World";
+	
+	ft_bzero(str, 5);
+	printf("%s\n", str);
+}*/

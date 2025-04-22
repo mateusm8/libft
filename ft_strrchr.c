@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 22:21:57 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 16:04:04 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 17:14:31 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,14 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+/*int	main(void)
+{
+	char	str[] = "Hello World";
+	char	c;
+
+	c = 'W';
+	if (ft_strrchr(str, c))
+		printf("%s\n", ft_strrchr(str, c));
+	return (0);
+}*/
