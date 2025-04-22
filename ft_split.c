@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 18:34:41 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 15:36:12 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/22 01:18:46 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,34 @@ static int	count_str(const char *s, char c)
 static char	*ft_strndup(const char *str, int n)
 {
 	char	*ptr;
+	int		i;
 
+	i = 0;
 	ptr = (char *) malloc((n + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
-	ptr = ft_memcpy(ptr, str, n);
+	while (i < n)
+	{
+		ptr[i] = str[i];
+		i++;
+	}
 	ptr[n] = '\0';
 	return (ptr);
+}
+
+static void	ft_free(char **str)
+{
+	int	i;
+
+	i = 0;
+	if (!str)
+		return ;
+	while (str[i])
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
 }
 
 char	**ft_split(const char *s, char c)
@@ -53,6 +74,8 @@ char	**ft_split(const char *s, char c)
 	int		j;
 	int		k;
 
+	if (!s)
+		return (NULL);
 	str = (char **) malloc((count_str(s, c) + 1) * sizeof(char *));
 	if (str == NULL)
 		return (NULL);
@@ -68,6 +91,11 @@ char	**ft_split(const char *s, char c)
 		if (i > j)
 		{
 			str[k] = ft_strndup(&s[j], i - j);
+			if (str[k] == NULL)
+			{
+				ft_free(str);
+				return (NULL);
+			}
 			k++;
 		}
 	}
