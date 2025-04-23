@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 23:40:38 by matmagal          #+#    #+#             */
-/*   Updated: 2025/03/24 14:07:59 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/23 18:41:04 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,10 @@ int	ft_atoi(const char *str)
 	}
 	return (nb * signal);
 }
+
+/*int	main(void)
+{
+	char 	str[] = "-591559cggrw94";
+	
+	printf("%d\n", ft_atoi(str));
+}*/

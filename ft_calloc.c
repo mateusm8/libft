@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 13:47:22 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 16:12:29 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/23 18:48:13 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,20 @@ void	*ft_calloc(size_t num, size_t size)
 	ft_bzero(ptr, num * size);
 	return (ptr);
 }
+
+/*int	main(void)
+{
+	size_t count = 5;
+	size_t size = sizeof(int);
+	size_t i;
+
+	int *arr = (int *)ft_calloc(count, size);
+
+	i = 0;
+	while (i < count)
+	{
+		printf("arr[%zu] = %d\n", i, arr[i]);
+		i++;
+	}
+	return (0);
+}*/

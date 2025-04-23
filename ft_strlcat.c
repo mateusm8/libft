@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 18:48:16 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 15:37:53 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/23 18:05:41 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[lendst + i] = '\0';
 	return (lendst + lensrc);
 }
+
+/*int	main(void)
+{
+	char	stc[] = "World!";
+	char	dst[50] = "Hello ";
+
+	printf("%zu, %s\n", ft_strlcat(dst, stc, 20), dst);
+}*/

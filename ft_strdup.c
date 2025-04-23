@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 13:53:17 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/14 13:16:40 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/23 18:51:33 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,10 @@ char	*ft_strdup(const char *str)
 	ptr[i] = '\0';
 	return (ptr);
 }
+
+/*int	main(void)
+{
+	char str[] = "Mais um teste";
+
+	printf("%s\n", ft_strdup(str));
+}*/

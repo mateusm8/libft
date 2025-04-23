@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 21:37:30 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/22 17:54:33 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/23 19:00:33 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j--;
 	return (ft_substr(s1, i, j - i));
 }
+
+/*int main(void)
+{
+	char str[] =  "*(*)Vamos ver se limpa tudo!***)())";
+	char sep[] = "*()";
+
+	printf("%s\n", ft_strtrim(str, sep));
+}*/

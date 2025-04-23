@@ -6,13 +6,13 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 13:44:37 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/03 22:57:12 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/23 18:58:07 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_cat2(char *str, const char *s1, const char *s2)
+static void	ft_cat2(char *str, const char *s1, const char *s2)
 {
 	int	i;
 	int	j;
@@ -61,3 +61,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_cat2(str, s1, s2);
 	return (str);
 }
+
+/*int	main(void)
+{
+	char str1[] = "Hello World 1 vai juntar com ";
+	char str2[] = "Hello World 2";
+
+	printf("%s\n", ft_strjoin(str1, str2));
+}*/
