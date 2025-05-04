@@ -6,7 +6,7 @@
 #    By: matmagal <matmagal@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/24 14:14:20 by matmagal          #+#    #+#              #
-#    Updated: 2025/05/04 17:15:39 by matmagal         ###   ########.fr        #
+#    Updated: 2025/05/04 18:42:43 by matmagal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,6 +69,10 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		$(AR) $(NAME) $(OBJS)
 
+bonus: $(BONUS_OBJ) $(NAME)
+	$(AR) $(NAME) $(BONUS_OBJ) $(OBJS)
+	touch bonus
+
 %.o: %.c
 		$(CC) $(CFLAGS) -c $< -o $@
 
@@ -77,10 +81,8 @@ clean:
 
 fclean: clean
 		$(RM) $(NAME)
+		$(RM) -rf bonus
 
 re: fclean all
-
-bonus: $(BONUS_OBJ) $(OBJS)
-	$(AR) $(NAME) $(BONUS_OBJ) $(OBJS)
 
 .PHONY: all clean fclean re
