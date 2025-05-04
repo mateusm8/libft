@@ -6,7 +6,7 @@
 /*   By: matmagal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 15:01:39 by matmagal          #+#    #+#             */
-/*   Updated: 2025/04/22 20:02:34 by matmagal         ###   ########.fr       */
+/*   Updated: 2025/04/24 16:11:53 by matmagal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,3 +62,9 @@ char	*ft_itoa(int n)
 		return (NULL);
 	return (ft_putnbr(str, n));
 }
+
+/*int	main(void)
+{
+	printf("%s\n", ft_itoa(53523));
+	return (0);
+}*/

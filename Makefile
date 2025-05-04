@@ -6,7 +6,7 @@
 #    By: matmagal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/24 14:14:20 by matmagal          #+#    #+#              #
-#    Updated: 2025/04/18 20:16:17 by matmagal         ###   ########.fr        #
+#    Updated: 2025/04/24 17:33:17 by matmagal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,15 @@ SRCS = 	ft_atoi.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c
 
-BONUS_SRC = 
+BONUS_SRC = ft_lstadd_back.c \
+			ft_lstadd_front.c \
+			ft_lstclear.c \
+			ft_lstdelone.c \
+			ft_lstiter.c \
+			ft_lstlast.c \
+			ft_lstmap.c \
+			ft_lstnew.c \
+			ft_lstsize.c \
 
 OBJS = $(SRCS:.c=.o)
 AR = ar rcs
@@ -65,7 +73,7 @@ $(NAME): $(OBJS)
 		$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) $(BONUS_OBJ)
 
 fclean: clean
 		$(RM) $(NAME)
